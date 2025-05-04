@@ -4,6 +4,7 @@ public class LinkDTO {
 
     private String uid;
     private String urlOriginal;
+    private String urlEncurtada;
 
     public LinkDTO() {
     }
@@ -27,6 +28,13 @@ public class LinkDTO {
 
     public void setUrlOriginal(String urlOriginal) {
         this.urlOriginal = urlOriginal;
+    }
+
+    public String getUrlEncurtada() {
+        return urlEncurtada;
+    }
+    public void setUrlEncurtada(String urlEncurtada) {
+        this.urlEncurtada = urlEncurtada;
     }
 
     @Override

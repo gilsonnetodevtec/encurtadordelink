@@ -18,4 +18,6 @@ public class Link {
     private String uid;
 
     private String urlOriginal;
+
+    private String urlEncurtada;
 }
