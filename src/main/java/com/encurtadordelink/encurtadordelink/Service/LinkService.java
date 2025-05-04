@@ -27,6 +27,6 @@ public class LinkService {
 
         linkRepository.save(link);
 
-        return new LinkDTO(uid, urlOriginal);
+        return new LinkDTO(uid, urlOriginal, urlEncurtada);
     }
 }

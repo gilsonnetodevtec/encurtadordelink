@@ -9,9 +9,10 @@ public class LinkDTO {
     public LinkDTO() {
     }
 
-    public LinkDTO(String uid, String urlOriginal) {
+    public LinkDTO(String uid, String urlOriginal, String urlEncurtada) {
         this.uid = uid;
         this.urlOriginal = urlOriginal;
+        this.urlEncurtada = urlEncurtada;
     }
 
     public String getUid() {

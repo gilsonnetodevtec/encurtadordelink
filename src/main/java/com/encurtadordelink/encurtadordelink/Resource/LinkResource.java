@@ -18,12 +18,12 @@ public class LinkResource {
     private LinkService linkService;
 
     @PostMapping("/encurtar")
-    public ResponseEntity<LinkDTO> encurtar(@RequestBody String urlOriginal) {
-        if (urlOriginal == null || urlOriginal.isBlank()) {
+    public ResponseEntity<LinkDTO> encurtar(@RequestBody LinkDTO request) {
+        if (request.getUrlOriginal() == null || request.getUrlOriginal().isBlank()) {
             return ResponseEntity.badRequest().build();
         }
 
-        LinkDTO urlEncurtada = linkService.encurtarUrl(urlOriginal);
-        return ResponseEntity.ok(urlEncurtada);
+        LinkDTO dto = linkService.encurtarUrl(request.getUrlOriginal());
+        return ResponseEntity.ok(dto);
     }
 }
